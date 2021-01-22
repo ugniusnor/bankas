@@ -1,0 +1,291 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #dddddd;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+header .header-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-container ul {
+  text-decoration: none;
+  display: inline;
+  padding: 30px;
+}
+
+header .header-container ul li {
+  text-decoration: none;
+  display: inline;
+  font-size: 25px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.not-valid {
+  border: 2px solid red !important;
+}
+
+.err {
+  color: red;
+  font-size: small !important;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+/* login register */
+.auth-box {
+  width: 100%;
+  padding: 50px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-box form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  background-color: white;
+}
+
+.auth-box form input {
+  width: 80%;
+  height: 50px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 200px;
+  padding: 30px;
+  margin: 15px;
+}
+
+.auth-box form button {
+  width: 80%;
+  height: 50px;
+  color: white;
+  background-color: #3598a5;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 200px;
+}
+
+.accounts-section {
+  width: 100%;
+  background-color: #a39f9f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.accounts-section .control-panel {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.accounts-section .control-panel .search-bar {
+  width: 70%;
+}
+
+.accounts-section .control-panel .search-bar form {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accounts-section .control-panel .search-bar form input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border-radius: 200px;
+  border: none;
+  padding: 30px;
+}
+
+.accounts-section .control-panel .search-bar form button {
+  height: 40px;
+  width: 100px;
+  border: none;
+  outline: none;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+}
+
+.accounts-section .accounts-container {
+  width: 95%;
+}
+
+.accounts-section .accounts-container .row-headers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 10%;
+}
+
+.accounts-section .accounts-container .manage-extension {
+  width: 100%;
+  background-color: white;
+  display: none;
+  transition: 1s ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+
+.accounts-section .accounts-container .manage-extension .account-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 10% 10%;
+}
+
+.accounts-section .accounts-container .manage-extension .edit {
+  cursor: pointer;
+}
+
+.accounts-section .accounts-container .manage-extension .manage-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 10% 10%;
+}
+
+.accounts-section .accounts-container .manage-extension .add-account-btn {
+  height: 50px;
+  border: none;
+  outline: none;
+}
+
+.accounts-section .accounts-container .manage-extension .add-account-btn img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.grid-item {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.create-account-table, .open-account {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.create-account-table form, .open-account form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 85%;
+  width: 95%;
+}
+
+.create-account-table form input, .open-account form input {
+  width: 85%;
+  height: 30px;
+  margin: 30px 0;
+  outline: none;
+  border: none;
+  background-color: #d1cece;
+  border-radius: 100px;
+  padding: 20px;
+}
+
+.create-account-table form button, .open-account form button {
+  outline: none;
+  border: none;
+  height: 30px;
+  padding: 20px;
+  border-radius: 100px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(28, 95, 196, 0.7);
+  cursor: pointer;
+}
+
+.create-account-table form button:hover, .open-account form button:hover {
+  background-color: #1c5fc4;
+}
+
+.create-account-table .close-table, .open-account .close-table {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.accounts-rows {
+  margin-top: 30px;
+}
+
+.accounts-rows .account-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 10%;
+}
+
+.accounts-rows .account-row .client {
+  margin-top: 20px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#update_funds {
+  display: none;
+}
+/*# sourceMappingURL=app.css.map */

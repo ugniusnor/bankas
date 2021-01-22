@@ -1,0 +1,174 @@
+.accounts-section {
+    width: 100% ;
+    background-color: rgb(163, 159, 159);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .control-panel {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        margin: 30px 0;
+        .search-bar {
+            width: 70%;
+            form {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                input {
+                    width: 100%;
+                    height: 40px;
+                    outline: none;
+                    border-radius: 200px;
+                    border: none;
+                    padding: 30px;
+                }
+                button {
+                    height: 40px;
+                    width: 100px;
+                    border: none;
+                    outline: none;
+                    padding: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 200px;
+                }
+            }
+    }
+        
+    }
+    .accounts-container {
+        width: 95%;
+   
+        .row-headers {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 10%;
+        }
+        
+        .manage-extension {
+        
+           
+            width: 100%;
+            background-color: white;
+            display: none;
+            transition: 1s ease-in-out;
+            height: 0;
+            overflow: hidden;
+            .account-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr 10% 10%;
+            }
+            .edit {
+                cursor: pointer;
+            }
+            
+            .manage-header {
+                width: 100%;
+                display: grid;
+                grid-template-columns:1fr 1fr 10% 10% ;
+            }
+        
+            .add-account-btn {
+                height: 50px;
+                border: none;
+                outline: none;
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}
+
+.grid-item{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.create-account-table, .open-account {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 85%;
+        width: 95%;
+        input {
+            
+            width: 85%;
+            height: 30px;
+            margin: 30px 0;
+            outline: none;
+            border:none;
+            background-color: rgb(209, 206, 206);
+            border-radius: 100px;
+            padding: 20px;
+        }
+        button {
+            outline: none;
+            border:none;
+            height: 30px;
+            padding: 20px;
+            border-radius: 100px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: rgba(28, 95, 196, 0.7);
+            cursor: pointer;
+            &:hover {
+                background-color: rgba(28, 95, 196, 1);
+                
+            }
+        }
+    }
+    .close-table {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        padding: 20px;
+    }
+}
+        .accounts-rows {
+            margin-top: 30px;
+            
+            .account-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 10%;
+                .client {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+#update_funds {
+    display: none;
+}
